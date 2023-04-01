@@ -1,0 +1,400 @@
+/*
+paleta colores
+
+#5F4C73
+#CDA7F2
+#B296D9
+#D7D7D9
+#BDBF75
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abril Fatface', cursive;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    height: 100vh;
+
+}
+.container_header {
+    width: 100%;
+    height: 50%;
+    background: #BDBF75;
+    background-image: linear-gradient(10deg,#bdbf757e,#d7d7d97e,#b296d96b),url(../img/MicrosoftTeams-image.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:105%;
+    background-position: top;
+    padding: 0.1px;
+
+}
+
+.menu {
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+.menu a {
+    color: #D7D7D9;
+    text-decoration: none;
+}
+hr {
+    border-color: #BDBF75;
+}
+.menu > li {
+    display: inline-block;
+    padding: 1.2% 2.2%;
+    background-color: #5F4C73;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: #D7D7D9;
+    font-size: 22px;
+}
+
+.menu > li:hover {
+    background-color: #CDA7F2;
+    border: 1px solid #BDBF75;
+}
+
+.menu.btn_contacto {
+    background-color: #CDA7F2;
+    border: 3px solid #BDBF75;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 4em;
+    margin: 1%;
+    color: #D7D7D9;
+}
+.fm_contact {
+    width: 40%;
+    height: auto;
+    margin: 2% auto;
+    border: 5px solid #5F4C73;
+    border-radius: 10px;
+    padding: 2% 1%;
+    text-align: center;
+}
+.fm_contact > hr {
+    margin-bottom: 3%;
+}
+.title_form {
+    margin: 25% 0;
+    text-align: center;
+    color: #CDA7F2;
+}
+.fm_contact > input,
+button,
+label {
+    display: inline-block;
+    width: 80%;
+    margin: 1% 0;
+    font-size: 22px;
+
+}
+
+.fm_contact > input,
+.msn {
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 2px solid #BDBF75;
+    outline: none;
+    background-color: #D7D7D9;
+}
+.msn {
+    width: 80%;
+
+}
+
+.fm_contact > label {
+    text-align: left;
+    padding: 5px;
+}
+
+.msn:focus,
+input:focus {
+    border-bottom: none;
+    border-right: 5px solid #BDBF75;
+    background-color: #b296d9c3;
+}
+.select{
+    width: 30%;
+    border: none;
+    border-bottom: 2px solid brown;
+    outline: none;
+    background-color: #FCE3E371;
+}
+.select{
+    width: 80%;
+    height: auto;
+    font-size: 110%;
+    text-align: center;
+}
+
+.btnCancelar,
+.btnRegistrar,
+.btn_enviar {
+    width: 40%;
+    margin-top: 2%;
+    padding: 10px 20px;
+    background-color: #CDA7F2;
+    border-radius: 10px;
+    font-size: 20px;
+    border: solid #BDBF75 2px;
+
+}
+
+.btn_enviar:hover {
+    background-color: #b296d9c3;
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    background-image: linear-gradient(10deg,#b296d9c3, #CDA7F2 30% ,#BDBF75 60%);
+}
+.foot {
+    display: inline;
+    margin: 5%;
+    text-align: center;
+
+}
+.copy {
+    width: 30%;
+    height: auto;
+    line-height: 40px;
+
+}
+.map, .my_nets {
+    width: 30%;
+    height: auto;
+}
+.title_about,
+.title_nets,
+.title_uni {
+    margin-bottom: 3%;
+    padding: 1%;
+}
+.social_net > li {
+    padding: 1%;
+}
+.nets {
+    width: 20%;
+
+}
+
+.foot > iframe {
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.credits {
+    width: 100%;
+    padding: 2%;
+    background-color: #b296d9c3;
+    text-align: right;
+}
+
+.credits > a {
+    text-decoration: none;
+}
+.allCards > .cardsEstudiantes > .card > .data-card, .text-ocupacion{
+    font-size: 20px;
+}
+
+.card {
+    width: 60%;
+    margin: 5% auto;
+    border: 2px solid #402319;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+.title-card {
+    font-size: 24px;
+    padding: 2%;
+}
+.data-card,
+.text-mail,
+.text-msn {
+    font-size: 20px;
+    color: #402319;
+    padding: 1% 0;
+}
+.text-telefono {
+    font-size: 22px;
+    padding: 2% 0;
+}
+.btnCancelar:hover,
+.btnRegistrar:hover {
+    background: #5F4C73;
+    text-decoration: underline;
+}
+.alerta {
+    width: 30%;
+    height: auto;
+    background: #5F4C73;
+    position: fixed;
+    top: calc(100vh - 65%);
+    left: calc(100vw - 65%);
+    text-align: center;
+    border: 2px solid #402319;
+    padding: 5px;
+    border-radius: 15px;
+}
+.textAlerta {
+    width: 100%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    color: aliceblue;
+    font-size: 20px;
+}
+.btnAlerta {
+    width: 40%;
+    height: auto;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    background: #402319;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #F2F2F2;
+    padding: 2%;
+}
+
+.is-invalid {
+    border-bottom: 5px solid darkred !important;
+   
+}
+
+.is-valid{
+
+    border-bottom: 5px solid darkgreen !important;
+   
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .menu > li {
+        font-size: 20px;
+    }
+    .title{
+        font-size: 3.5em;
+    }
+    .fm_contact{
+        width: 70%;
+    }
+    .container_header{
+        height: 28%;
+    }
+}
+@media (min-width: 680px) and (max-width: 768px) {
+    .menu{
+        padding: 3%; 
+     }    
+     .menu > li{
+        font-size: 18px;
+        margin-bottom: 1.5%; 
+     }
+     .title{
+        font-size:2.0em;
+        margin-top: 10.0%;
+     }
+     .fm_contact{
+        width: 75%;
+    }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+        width:35%;
+        margin-top: 2.0%;
+        padding: 8px 18px;
+        font-size: 18px;
+    }
+    .container_header{
+        height: 20%;
+    }
+}
+@media (min-width: 580px) and (max-width: 680px) {
+      .menu{
+        padding: 3%; 
+     }    
+     .menu > li{
+        font-size: 18px;
+        margin-bottom: 1.5%; 
+     }
+     .title{
+        font-size:2.0em;
+        margin-top: 10.0%;
+     }
+     .fm_contact{
+        width: 75%;
+    }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+        width:35%;
+        margin-top: 2.0%;
+        padding: 8px 18px;
+        font-size: 18px;
+    }
+    .container_header{
+        height: 20%;
+    }
+}
+@media (min-width: 300px) and (max-width: 580px) {
+    .title{
+        font-size:1.5em;
+        margin-top: 2.5%;
+     }
+     .menu{
+        text-align: right;
+        margin: 2%;
+        margin-bottom: 5%;
+    
+     }
+    .menu > li{
+        display: block;
+        padding: 1%;
+        text-align: center;
+        font-size: 18px;
+        
+    }
+    .fm_contact{
+        width: 85%;
+        border: 3px solid;
+    }
+    .fm_contact > input, label, button{
+        font-size: 20px;
+
+    }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+        width:45%;
+        margin-top: 2.5%;
+    }
+    .container_header{
+        height: 25%;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .foot > iframe{
+        width: 90%;
+    }
+    .credits{
+        height: auto;
+        padding: 2%;
+    }
+    .copy{
+        line-height: 25px;
+    }
+}
+
